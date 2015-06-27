@@ -1,8 +1,15 @@
-angular.module('MainCtrl', [])
+(function () {
+	'use strict';
 
-.controller('mainController', ['$scope', function($scope) {
+	angular
+		.module('cosBox')
+		.controller('MainController', ctrl);
 
-    $scope.message = 'Look at me go!';
+	/* @ngInject */
+	function ctrl($http) {
+		/*jshint validthis: true */
+		var vm 			= this;
 
-}]);
 
+	}
+})();
